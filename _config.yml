@@ -1,3 +1,7 @@
 title: My Minimal Site
-description: A minimal Jekyll example using jekyll-theme-minimalistic
-theme: jekyll-theme-minimalistic
+description: A minimal Jekyll example
+
+remote_theme: vaibhavvikas/jekyll-theme-minimalistic
+
+plugins:
+  - jekyll-remote-theme
