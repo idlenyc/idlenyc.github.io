@@ -8,49 +8,49 @@ title: Tabs Example
 Below is a simple tab implementation using **only HTML + CSS**.
 
 <style>
-/* ===== Tabs ===== */
-.tabs-wrapper {
-  margin-top: 1rem;
-}
-
-.tabs {
+/* ===== Language Tabs ===== */
+.lang-tabs {
   display: flex;
   gap: 0.5rem;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  border-bottom: 2px solid #e5e5e5;
-  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
 }
 
-.tabs::-webkit-scrollbar { display: none; }
-.tabs { scrollbar-width: none; }
-
-.tab-btn {
-  flex: 0 0 auto;
+.lang-btn {
   background: #f5f5f5;
   border: none;
   border-radius: 999px;
-  padding: 0.65rem 1.2rem;
+  padding: 0.6rem 1.2rem;
   font-size: 0.95rem;
   cursor: pointer;
-  white-space: nowrap;
 }
 
-.tab-btn.active {
+.lang-btn.active {
   background: #000;
   color: #fff;
 }
 
-.tab-content {
+.lang-content {
   display: none;
-  padding-top: 1rem;
 }
 
-.tab-content.active {
+.lang-content.active {
   display: block;
 }
 
-/* ===== Collapsible / FAQ ===== */
+/* ===== TOC ===== */
+.toc {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background: #fafafa;
+}
+
+.toc ul {
+  padding-left: 1.25rem;
+}
+
+/* ===== Collapsible ===== */
 details {
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -60,8 +60,8 @@ details {
 }
 
 summary {
-  cursor: pointer;
   font-weight: 600;
+  cursor: pointer;
 }
 
 /* ===== Images ===== */
@@ -76,150 +76,244 @@ summary {
   border-radius: 6px;
   border: 1px solid #ddd;
 }
-
-/* Desktop tweak */
-@media (min-width: 640px) {
-  .tab-btn { border-radius: 6px; }
-}
 </style>
 
-<div class="tabs-wrapper">
-  <div class="tabs">
-    <button class="tab-btn active" onclick="openTab(event, 'overview')">Overview</button>
-    <button class="tab-btn" onclick="openTab(event, 'guidelines')">Guidelines</button>
-    <button class="tab-btn" onclick="openTab(event, 'steps')">Step-by-Step</button>
-    <button class="tab-btn" onclick="openTab(event, 'examples')">Examples</button>
-  </div>
+<!-- LANGUAGE TABS -->
+<div class="lang-tabs">
+  <button class="lang-btn active" onclick="switchLang('en')">English</button>
+  <button class="lang-btn" onclick="switchLang('es')">Español</button>
+</div>
 
-  <!-- OVERVIEW -->
-  <div id="overview" class="tab-content active">
+<!-- ================= ENGLISH ================= -->
+<div id="lang-en" class="lang-content active">
 
-    <h3>Why am I doing this?</h3>
-    <p>
-      I’ve been recording these videos myself for several years and am making good money.
-      My reporting process is streamlined and takes very little time.
-    </p>
-    <p>
-      The limiting factor is capturing incidents — which I can crowdsource through you.
-    </p>
+<h2 id="top">Earn $10 for Recording Idling Vehicles</h2>
 
+<div class="toc">
+  <strong>Table of Contents</strong>
+  <ul>
+    <li><a href="#why">Why am I doing this?</a></li>
+    <li><a href="#reward">Why is the reward $10?</a></li>
+    <li><a href="#earnings">How much can I earn?</a></li>
+    <li><a href="#guidelines">Video guidelines</a></li>
+    <li><a href="#steps">Step-by-step</a></li>
+    <li><a href="#examples">Examples</a></li>
+  </ul>
+</div>
+
+<h3 id="why">Why am I doing this?</h3>
+<p>
+I’ve been recording these videos myself for several years and am making good money.
+My reporting process is streamlined and takes very little time.
+</p>
+<p>
+The limiting factor is capturing incidents — which I can crowdsource through you.
+</p>
+
+<ul>
+  <li>You make easy money</li>
+  <li>I make money</li>
+  <li>The city gets cleaner air</li>
+</ul>
+
+<h3 id="reward">Why is the reward $10?</h3>
+<ul>
+  <li>I handle filing the complaint and paying taxes</li>
+  <li>Official rewards take 1+ year — you get paid immediately</li>
+  <li>Many offenders never pay, meaning I get $0</li>
+  <li>I shield you from bureaucracy and risk</li>
+</ul>
+
+<h3 id="earnings">How much can I earn?</h3>
+<p>
+For someone already on NYC streets, capturing <strong>5–10 incidents per day</strong> is realistic.
+</p>
+<p>
+That’s <strong>$50–$100 per day</strong>.
+</p>
+
+<h3 id="guidelines">Video guidelines</h3>
+
+<details open>
+  <summary>Principles</summary>
+  <ul>
+    <li>Only commercial vehicles and buses</li>
+    <li>No private vehicles, Ubers, taxis, city or police vehicles</li>
+    <li>Vehicle must not move for <strong>3:10 minutes</strong></li>
+    <li>Audible engine noise or visible exhaust required</li>
+    <li>License plate and DOT number must be visible</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Mitigating factors</summary>
+  <ul>
+    <li><strong>Trucks:</strong> tail lift, cooling unit, secondary engine</li>
+    <li>
+      <strong>Buses:</strong> no passengers or luggage loading
+      (entire right side must be visible)
+    </li>
+    <li><strong>Vans/Pickups:</strong> no commercial plate, cooling unit</li>
+  </ul>
+</details>
+
+<h3 id="steps">Step-by-step</h3>
+<ol>
+  <li>
+    Download a timestamp + location camera:
     <ul>
-      <li>You make easy money</li>
-      <li>I make money</li>
-      <li>The city gets cleaner air</li>
+      <li>
+        <a href="https://play.google.com/store/apps/details?id=com.jeyluta.timestampcamerafreeent&pli=1" target="_blank">
+          Android – Timestamp Camera
+        </a>
+      </li>
+      <li>
+        <a href="https://apps.apple.com/ph/app/timestamp-camera-enterprise/id1297201432" target="_blank">
+          iOS – Timestamp Camera Enterprise
+        </a>
+      </li>
     </ul>
+  </li>
+  <li>Record the full video following guidelines</li>
+  <li>Rename the file to your <strong>Venmo username</strong></li>
+  <li>
+    Upload here:
+    <a href="https://we.tl/r-nGvpVZiFwo" target="_blank">WeTransfer</a>
+  </li>
+  <li>Approved videos earn <strong>$10</strong></li>
+</ol>
 
-    <h3>Why is the reward $10?</h3>
+<h3 id="examples">Examples</h3>
+<div class="example-grid">
+  <img src="https://via.placeholder.com/300x200?text=License+Plate" alt="">
+  <img src="https://via.placeholder.com/300x200?text=Exhaust" alt="">
+  <img src="https://via.placeholder.com/300x200?text=Bus+Right+Side" alt="">
+</div>
+
+</div>
+
+<!-- ================= SPANISH ================= -->
+<div id="lang-es" class="lang-content">
+
+<h2 id="top-es">Gana $10 grabando vehículos en ralentí</h2>
+
+<div class="toc">
+  <strong>Tabla de Contenidos</strong>
+  <ul>
+    <li><a href="#why-es">¿Por qué hago esto?</a></li>
+    <li><a href="#reward-es">¿Por qué la recompensa es $10?</a></li>
+    <li><a href="#earnings-es">¿Cuánto puedo ganar?</a></li>
+    <li><a href="#guidelines-es">Guías de video</a></li>
+    <li><a href="#steps-es">Paso a paso</a></li>
+    <li><a href="#examples-es">Ejemplos</a></li>
+  </ul>
+</div>
+
+<h3 id="why-es">¿Por qué hago esto?</h3>
+<p>
+He estado grabando estos videos yo mismo durante varios años y he estado ganando buen dinero.
+Mi proceso de reportes está optimizado y ahora toma muy poco tiempo.
+</p>
+<p>
+El factor limitante es capturar incidentes, lo que puedo hacer mediante crowdsourcing contigo.
+</p>
+
+<ul>
+  <li>Tú ganas dinero fácilmente</li>
+  <li>Yo gano dinero</li>
+  <li>La ciudad obtiene aire más limpio</li>
+</ul>
+
+<h3 id="reward-es">¿Por qué la recompensa es $10?</h3>
+<ul>
+  <li>Yo me encargo de presentar la queja y pagar impuestos</li>
+  <li>Las recompensas oficiales tardan más de un año — tú recibes dinero de inmediato</li>
+  <li>Muchos infractores nunca pagan, lo que significa que yo recibo $0</li>
+  <li>Te protejo de la burocracia y el riesgo</li>
+</ul>
+
+<h3 id="earnings-es">¿Cuánto puedo ganar?</h3>
+<p>
+Para alguien que ya pasa tiempo en las calles de NYC, capturar <strong>5–10 incidentes por día</strong> es realista.
+</p>
+<p>
+Eso significa <strong>$50–$100 diarios</strong>.
+</p>
+
+<h3 id="guidelines-es">Guías de video</h3>
+
+<details open>
+  <summary>Principios</summary>
+  <ul>
+    <li>Solo vehículos comerciales y autobuses</li>
+    <li>No vehículos privados, Ubers, taxis, vehículos de la ciudad o policía</li>
+    <li>El vehículo no debe moverse durante <strong>3:10 minutos</strong></li>
+    <li>Se requiere ruido de motor audible o humo visible</li>
+    <li>La matrícula y número DOT deben ser visibles</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Factores atenuantes</summary>
+  <ul>
+    <li><strong>Camiones:</strong> uso de elevador de cola, unidad de refrigeración, motor secundario</li>
+    <li>
+      <strong>Autobuses:</strong> sin pasajeros subiendo/bajando, sin carga de equipaje
+      (todo el lado derecho debe ser visible)
+    </li>
+    <li><strong>Furgonetas / pickups:</strong> sin placa comercial, unidad de refrigeración</li>
+  </ul>
+</details>
+
+<h3 id="steps-es">Paso a paso</h3>
+<ol>
+  <li>
+    Descarga una cámara que agregue fecha, hora y ubicación:
     <ul>
-      <li>I handle official filing and taxes</li>
-      <li>Official rewards take 1+ year — you get paid immediately</li>
-      <li>Many offenders never pay, meaning I get $0</li>
-      <li>I shield you from bureaucracy and risk</li>
+      <li>
+        <a href="https://play.google.com/store/apps/details?id=com.jeyluta.timestampcamerafreeent&pli=1" target="_blank">
+          Android – Timestamp Camera
+        </a>
+      </li>
+      <li>
+        <a href="https://apps.apple.com/ph/app/timestamp-camera-enterprise/id1297201432" target="_blank">
+          iOS – Timestamp Camera Enterprise
+        </a>
+      </li>
     </ul>
+  </li>
+  <li>Graba el video completo siguiendo las guías</li>
+  <li>Renombra el archivo con tu <strong>usuario de Venmo</strong></li>
+  <li>
+    Sube el video aquí:
+    <a href="https://we.tl/r-nGvpVZiFwo" target="_blank">WeTransfer</a>
+  </li>
+  <li>Videos aprobados ganan <strong>$10</strong></li>
+</ol>
 
-    <p>
-      Filming <strong>5–10 incidents per day</strong> is realistic for someone already on NYC streets.
-    </p>
-    <p>
-      That’s <strong>$50–$100 per day</strong> extra.
-    </p>
+<h3 id="examples-es">Ejemplos</h3>
+<div class="example-grid">
+  <img src="https://via.placeholder.com/300x200?text=Matrícula+Visible" alt="">
+  <img src="https://via.placeholder.com/300x200?text=Humo+Visible" alt="">
+  <img src="https://via.placeholder.com/300x200?text=Lado+Derecho+Autobús" alt="">
+</div>
 
-  </div>
-
-  <!-- GUIDELINES -->
-  <div id="guidelines" class="tab-content">
-
-    <details open>
-      <summary>Principles</summary>
-      <ul>
-        <li>Only commercial vehicles and buses</li>
-        <li>No private vehicles, Ubers, taxis, city or police vehicles</li>
-        <li>Vehicle must not move for <strong>3:10 minutes</strong></li>
-        <li>Audible engine noise or visible exhaust required</li>
-        <li>No mitigating factors may occur</li>
-        <li>License plate and DOT # must be clearly visible</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Mitigating Factors</summary>
-      <ul>
-        <li><strong>Trucks:</strong> tail lift, cooling unit, secondary engine</li>
-        <li>
-          <strong>Buses:</strong> no passengers entering/exiting, no luggage loading
-          <br>
-          (entire right side must be visible)
-        </li>
-        <li><strong>Vans/Pickups:</strong> no commercial plate, cooling unit</li>
-      </ul>
-    </details>
-
-  </div>
-
-  <!-- STEPS -->
-  <div id="steps" class="tab-content">
-
-    <ol>
-      <li>
-        Download a timestamp + location video app:
-        <ul>
-          <li>
-            <a href="https://play.google.com/store/apps/details?id=com.jeyluta.timestampcamerafreeent&pli=1" target="_blank">
-              Android – Timestamp Camera
-            </a>
-          </li>
-          <li>
-            <a href="https://apps.apple.com/ph/app/timestamp-camera-enterprise/id1297201432" target="_blank">
-              iOS – Timestamp Camera Enterprise
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li>Record the full video following guidelines</li>
-      <li>Rename the file to your <strong>Venmo username</strong></li>
-      <li>
-        Upload here:
-        <a href="https://we.tl/r-nGvpVZiFwo" target="_blank">WeTransfer</a>
-      </li>
-      <li>Approved videos earn <strong>$10</strong></li>
-    </ol>
-
-  </div>
-
-  <!-- EXAMPLES -->
-  <div id="examples" class="tab-content">
-
-    <h3>Photo Examples</h3>
-    <p>(Replace these placeholders with real screenshots)</p>
-
-    <div class="example-grid">
-      <img src="https://via.placeholder.com/300x200?text=License+Plate+Visible" alt="">
-      <img src="https://via.placeholder.com/300x200?text=Exhaust+Visible" alt="">
-      <img src="https://via.placeholder.com/300x200?text=Bus+Right+Side" alt="">
-    </div>
-
-  </div>
 </div>
 
 <script>
-function openTab(evt, tabId) {
-  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+function switchLang(lang) {
+  document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
 
-  document.getElementById(tabId).classList.add('active');
-  evt.currentTarget.classList.add('active');
+  document.getElementById('lang-' + lang).classList.add('active');
+  document.querySelector(`[onclick="switchLang('${lang}')"]`).classList.add('active');
 
-  history.replaceState(null, '', '#' + tabId);
-  localStorage.setItem('activeTab', tabId);
+  localStorage.setItem('lang', lang);
 }
 
-// Restore tab from URL or storage
+// Restore language
 (function () {
-  const hash = location.hash.replace('#', '');
-  const saved = localStorage.getItem('activeTab');
-  const tab = hash || saved;
-  if (tab && document.getElementById(tab)) {
-    document.querySelector(`.tab-btn[onclick*="${tab}"]`)?.click();
-  }
+  const saved = localStorage.getItem('lang');
+  if (saved) switchLang(saved);
 })();
 </script>
