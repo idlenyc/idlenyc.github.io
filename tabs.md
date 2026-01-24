@@ -13,20 +13,33 @@ Below is a simple tab implementation using **only HTML + CSS**.
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap; /* allows wrapping on small screens */
 }
 
 .lang-btn {
   background: #f5f5f5;
   border: none;
-  border-radius: 999px;
-  padding: 0.6rem 1.2rem;
-  font-size: 0.95rem;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
   cursor: pointer;
+  text-align: center;
+  flex: 1 1 100%;   /* full width on small screens */
+  min-width: 120px;
+  transition: background 0.2s;
 }
 
 .lang-btn.active {
   background: #000;
   color: #fff;
+}
+
+/* For larger screens, make buttons smaller and inline */
+@media (min-width: 480px) {
+  .lang-btn {
+    flex: 1; /* equal width side by side */
+  }
 }
 
 .lang-content {
