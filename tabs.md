@@ -1,17 +1,10 @@
----
-layout: page
-title: Tabs Example
----
-
-# Guide on producing idle videos
-
 <style>
 /* ===== Language Tabs ===== */
 .lang-tabs {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1rem;
-  flex-wrap: wrap; /* allows wrapping on small screens */
+  flex-wrap: wrap;
 }
 
 .lang-btn {
@@ -23,7 +16,7 @@ title: Tabs Example
   font-weight: 600;
   cursor: pointer;
   text-align: center;
-  flex: 1 1 100%;   /* full width on small screens */
+  flex: 1 1 100%;
   min-width: 120px;
   transition: background 0.2s;
 }
@@ -33,36 +26,32 @@ title: Tabs Example
   color: #fff;
 }
 
-/* For larger screens, make buttons smaller and inline */
 @media (min-width: 480px) {
   .lang-btn {
-    flex: 1; /* equal width side by side */
+    flex: 1;
   }
 }
 
-.lang-content {
-  display: none;
-}
-
-.lang-content.active {
-  display: block;
-}
-
-/* ===== TOC ===== */
+/* ===== Table of Contents ===== */
 .toc {
+  margin: 1rem 0;
+}
+
+.toc details {
   border: 1px solid #ddd;
   border-radius: 6px;
-  padding: 1rem;
-  margin: 1.5rem 0;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
   background: #fafafa;
 }
 
-.toc ul {
-  padding-left: 1.25rem;
+.toc summary {
+  font-weight: 600;
+  cursor: pointer;
 }
 
 /* ===== Collapsible ===== */
-details {
+details.content-collapsible {
   border: 1px solid #ddd;
   border-radius: 6px;
   padding: 0.75rem 1rem;
@@ -70,7 +59,7 @@ details {
   background: #fafafa;
 }
 
-summary {
+details.content-collapsible summary {
   font-weight: 600;
   cursor: pointer;
 }
@@ -102,14 +91,24 @@ summary {
 
 <div class="toc">
   <strong>Table of Contents</strong>
-  <ul>
-    <li><a href="#why">Why am I doing this?</a></li>
-    <li><a href="#reward">Why is the reward $10?</a></li>
-    <li><a href="#earnings">How much can I earn?</a></li>
-    <li><a href="#guidelines">Video guidelines</a></li>
-    <li><a href="#steps">Step-by-step</a></li>
-    <li><a href="#examples">Examples</a></li>
-  </ul>
+  <details>
+    <summary><a href="#why" class="toc-link">Why am I doing this?</a></summary>
+  </details>
+  <details>
+    <summary><a href="#reward" class="toc-link">Why is the reward $10?</a></summary>
+  </details>
+  <details>
+    <summary><a href="#earnings" class="toc-link">How much can I earn?</a></summary>
+  </details>
+  <details>
+    <summary><a href="#guidelines" class="toc-link">Video guidelines</a></summary>
+  </details>
+  <details>
+    <summary><a href="#steps" class="toc-link">Step-by-step</a></summary>
+  </details>
+  <details>
+    <summary><a href="#examples" class="toc-link">Examples</a></summary>
+  </details>
 </div>
 
 <h3 id="why">Why am I doing this?</h3>
@@ -145,7 +144,7 @@ That’s <strong>$50–$100 per day</strong>.
 
 <h3 id="guidelines">Video guidelines</h3>
 
-<details open>
+<details class="content-collapsible">
   <summary>Principles</summary>
   <ul>
     <li>Only commercial vehicles and buses</li>
@@ -156,7 +155,7 @@ That’s <strong>$50–$100 per day</strong>.
   </ul>
 </details>
 
-<details>
+<details class="content-collapsible">
   <summary>Mitigating factors</summary>
   <ul>
     <li><strong>Trucks:</strong> tail lift, cooling unit, secondary engine</li>
@@ -210,14 +209,24 @@ That’s <strong>$50–$100 per day</strong>.
 
 <div class="toc">
   <strong>Tabla de Contenidos</strong>
-  <ul>
-    <li><a href="#why-es">¿Por qué hago esto?</a></li>
-    <li><a href="#reward-es">¿Por qué la recompensa es $10?</a></li>
-    <li><a href="#earnings-es">¿Cuánto puedo ganar?</a></li>
-    <li><a href="#guidelines-es">Guías de video</a></li>
-    <li><a href="#steps-es">Paso a paso</a></li>
-    <li><a href="#examples-es">Ejemplos</a></li>
-  </ul>
+  <details>
+    <summary><a href="#why-es" class="toc-link">¿Por qué hago esto?</a></summary>
+  </details>
+  <details>
+    <summary><a href="#reward-es" class="toc-link">¿Por qué la recompensa es $10?</a></summary>
+  </details>
+  <details>
+    <summary><a href="#earnings-es" class="toc-link">¿Cuánto puedo ganar?</a></summary>
+  </details>
+  <details>
+    <summary><a href="#guidelines-es" class="toc-link">Guías de video</a></summary>
+  </details>
+  <details>
+    <summary><a href="#steps-es" class="toc-link">Paso a paso</a></summary>
+  </details>
+  <details>
+    <summary><a href="#examples-es" class="toc-link">Ejemplos</a></summary>
+  </details>
 </div>
 
 <h3 id="why-es">¿Por qué hago esto?</h3>
@@ -253,7 +262,7 @@ Eso significa <strong>$50–$100 diarios</strong>.
 
 <h3 id="guidelines-es">Guías de video</h3>
 
-<details open>
+<details class="content-collapsible">
   <summary>Principios</summary>
   <ul>
     <li>Solo vehículos comerciales y autobuses</li>
@@ -264,7 +273,7 @@ Eso significa <strong>$50–$100 diarios</strong>.
   </ul>
 </details>
 
-<details>
+<details class="content-collapsible">
   <summary>Factores atenuantes</summary>
   <ul>
     <li><strong>Camiones:</strong> uso de elevador de cola, unidad de refrigeración, motor secundario</li>
@@ -327,4 +336,21 @@ function switchLang(lang) {
   const saved = localStorage.getItem('lang');
   if (saved) switchLang(saved);
 })();
+
+// Auto-expand collapsible when TOC link clicked
+document.querySelectorAll('.toc-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const target = document.getElementById(targetId);
+    if (!target) return;
+
+    // Open the nearest parent collapsible if exists
+    let parentDetails = target.closest('details');
+    if (parentDetails) parentDetails.open = true;
+
+    // Scroll to the section smoothly
+    target.scrollIntoView({behavior: 'smooth'});
+  });
+});
 </script>
