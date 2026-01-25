@@ -80,7 +80,7 @@ details.content-section summary {
   border-left: 5px solid #007700;
   border-radius: 10px;
   padding: 1.25rem 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .intro-box h2 {
@@ -92,6 +92,33 @@ details.content-section summary {
 .intro-box p {
   font-size: 1.1rem;
   line-height: 1.5;
+}
+
+/* ===== Sticky Upload Link ===== */
+.sticky-upload {
+  position: sticky;
+  top: 0.75rem;
+  background: #fff;
+  z-index: 1000;
+  padding: 0.75rem 0;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.upload-link {
+  display: inline-block;
+  background-color: #28a745;
+  color: #fff !important;
+  padding: 0.85rem 1.25rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+
+.upload-link:hover {
+  background-color: #218838;
 }
 
 /* ===== CTA Box ===== */
@@ -141,6 +168,11 @@ details.content-section summary {
   <h2>Earn Extra Cash in NYC – It’s Easy!</h2>
   <p>Spot idling commercial vehicles or buses, record a short video, and get $10 for each qualifying submission.  
   No sign-up, no waiting, just quick, simple rewards for helping keep NYC air cleaner.</p>
+</div>
+
+<!-- Sticky upload link -->
+<div class="sticky-upload">
+  <a href="https://we.tl/r-nGvpVZiFwo" target="_blank" class="upload-link">Upload Your Video Here</a>
 </div>
 
 <details class="content-section">
@@ -212,10 +244,7 @@ details.content-section summary {
     </li>
     <li>Record the full video following the guidelines</li>
     <li>Rename the file to your <strong>Venmo username</strong></li>
-    <li>
-      Upload the video here:
-      <a href="https://we.tl/r-nGvpVZiFwo" target="_blank">WeTransfer</a>
-    </li>
+    <li>Upload it using the link above</li>
     <li>If approved, you receive <strong>$10</strong></li>
   </ol>
 </details>
@@ -261,6 +290,11 @@ details.content-section summary {
   <h2>Gana dinero extra en NYC – ¡Es fácil!</h2>
   <p>Identifica vehículos comerciales o autobuses en ralentí, graba un breve video y recibe $10 por cada envío válido.  
   Sin registro, sin esperas, solo recompensas rápidas por ayudar a mantener el aire de NYC más limpio.</p>
+</div>
+
+<!-- Sticky upload link -->
+<div class="sticky-upload">
+  <a href="https://we.tl/r-nGvpVZiFwo" target="_blank" class="upload-link">Sube tu video aquí</a>
 </div>
 
 <details class="content-section">
@@ -332,10 +366,7 @@ details.content-section summary {
     </li>
     <li>Graba el video completo cumpliendo las guías</li>
     <li>Cambia el nombre del archivo a tu <strong>usuario de Venmo</strong></li>
-    <li>
-      Sube el video aquí:
-      <a href="https://we.tl/r-nGvpVZiFwo" target="_blank">WeTransfer</a>
-    </li>
+    <li>Súbelo usando el enlace arriba</li>
     <li>Si el video es aprobado, recibes <strong>$10</strong></li>
   </ol>
 </details>
@@ -357,7 +388,7 @@ details.content-section summary {
   <ul>
     <li>Graba un video válido</li>
     <li>Cámbiale el nombre a tu usuario de Venmo</li>
-    <li>Súbelo usando el enlace de arriba</li>
+    <li>Súbelo usando el enlace arriba</li>
     <li><strong>Recibe $10 si es aprobado</strong></li>
   </ul>
   <p><strong>Sin registro. Sin papeleo. Sin esperas.</strong></p>
