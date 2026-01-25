@@ -74,6 +74,27 @@ details.content-section summary {
   border: 1px solid #ddd;
 }
 
+/* ===== Intro Box ===== */
+.intro-box {
+  background: #f9f9f9;
+  border-left: 5px solid #000;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro-box h2 {
+  margin-top: 0;
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.intro-box p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* ===== CTA Box ===== */
 .cta-box {
   border: 2px solid #000;
   border-radius: 14px;
@@ -94,10 +115,7 @@ details.content-section summary {
 .cta-box strong {
   font-weight: 700;
 }
-  
 </style>
-
-
 
 <!-- LANGUAGE TABS -->
 <div class="lang-tabs">
@@ -108,7 +126,11 @@ details.content-section summary {
 <!-- ================= ENGLISH ================= -->
 <div id="lang-en" class="lang-content active">
 
-<h2>Earn $10 for Recording Idling Vehicles</h2>
+<div class="intro-box">
+  <h2>Earn Extra Cash in NYC – It’s Easy!</h2>
+  <p>Spot idling commercial vehicles or buses, record a short video, and get $10 for each qualifying submission.  
+  No sign-up, no waiting, just quick, simple rewards for helping keep NYC air cleaner.</p>
+</div>
 
 <details class="content-section">
   <summary>Why am I doing this?</summary>
@@ -196,13 +218,11 @@ details.content-section summary {
   </div>
 </details>
 
+<!-- CTA Box -->
 <div class="cta-box">
   <h3>Ready to get started?</h3>
-  <p>
-    If you’re already spending time on the streets of NYC, recording idling vehicles
-    can be an easy way to earn extra cash.
-  </p>
-  <p>All you need is your phone and a few minutes per incident.</p>
+  <p>If you’re already spending time on the streets of NYC, recording idling vehicles can be an easy way to earn extra cash.  
+  All you need is your phone and a few minutes per incident.</p>
   <ul>
     <li>Record a qualifying video</li>
     <li>Rename it to your Venmo username</li>
@@ -211,7 +231,6 @@ details.content-section summary {
   </ul>
   <p><strong>No sign-up. No paperwork. No waiting.</strong></p>
 </div>
-
 
 <details class="content-section">
   <summary>Legal Disclaimer</summary>
@@ -227,7 +246,11 @@ details.content-section summary {
 <!-- ================= SPANISH ================= -->
 <div id="lang-es" class="lang-content">
 
-<h2>Gana $10 por grabar vehículos en ralentí</h2>
+<div class="intro-box">
+  <h2>Gana dinero extra en NYC – ¡Es fácil!</h2>
+  <p>Identifica vehículos comerciales o autobuses en ralentí, graba un breve video y recibe $10 por cada envío válido.  
+  Sin registro, sin esperas, solo recompensas rápidas por ayudar a mantener el aire de NYC más limpio.</p>
+</div>
 
 <details class="content-section">
   <summary>¿Por qué hago esto?</summary>
@@ -315,13 +338,11 @@ details.content-section summary {
   </div>
 </details>
 
+<!-- CTA Box -->
 <div class="cta-box">
   <h3>¿Listo para empezar?</h3>
-  <p>
-    Si ya pasas tiempo en las calles de NYC, grabar vehículos en ralentí
-    puede ser una forma sencilla de ganar dinero extra.
-  </p>
-  <p>Solo necesitas tu teléfono y unos minutos por incidente.</p>
+  <p>Si ya pasas tiempo en las calles de NYC, grabar vehículos en ralentí puede ser una forma sencilla de ganar dinero extra.  
+  Solo necesitas tu teléfono y unos minutos por incidente.</p>
   <ul>
     <li>Graba un video válido</li>
     <li>Cámbiale el nombre a tu usuario de Venmo</li>
@@ -330,7 +351,6 @@ details.content-section summary {
   </ul>
   <p><strong>Sin registro. Sin papeleo. Sin esperas.</strong></p>
 </div>
-
 
 <details class="content-section">
   <summary>Aviso Legal</summary>
