@@ -111,10 +111,7 @@ details.content-section summary {
 
 <details class="content-section">
   <summary>How much can I earn?</summary>
-  <p>
-    For someone already spending time on the streets of NYC, capturing
-    <strong>5–10 incidents per day</strong> is realistic.
-  </p>
+  <p>For someone already spending time on the streets of NYC, capturing <strong>5–10 incidents per day</strong> is realistic.</p>
   <p><strong>$50–$100 per day</strong></p>
 </details>
 
@@ -133,10 +130,7 @@ details.content-section summary {
   <h4>Mitigating Factors</h4>
   <ul>
     <li><strong>Truck:</strong> tail lift, cooling unit, secondary engine</li>
-    <li>
-      <strong>Bus:</strong> no passengers entering/exiting, no luggage loading
-      (entire right side must be filmed)
-    </li>
+    <li><strong>Bus:</strong> no passengers entering/exiting, no luggage loading (entire right side must be filmed)</li>
     <li><strong>Vans / Pickups:</strong> no commercial plate, cooling unit</li>
   </ul>
 </details>
@@ -178,6 +172,15 @@ details.content-section summary {
   </div>
 </details>
 
+<details class="content-section">
+  <summary>Legal Disclaimer</summary>
+  <p>This page is for informational purposes only and does not constitute legal advice.</p>
+  <p>By submitting a video, you confirm that you recorded it legally, from a public place, without trespassing, and in compliance with all applicable laws.</p>
+  <p>You are not an employee, contractor, or agent of the website operator. Participation is voluntary.</p>
+  <p>Payment is offered as a goodwill reward for usable footage and is not guaranteed.</p>
+  <p>The website operator is solely responsible for filing official complaints and assumes no liability for any issues arising from recording or submission.</p>
+</details>
+
 </div>
 
 <!-- ================= SPANISH ================= -->
@@ -210,10 +213,7 @@ details.content-section summary {
 
 <details class="content-section">
   <summary>¿Cuánto puedo ganar?</summary>
-  <p>
-    Para alguien que ya pasa tiempo en las calles de NYC,
-    capturar entre <strong>5 y 10 incidentes por día</strong> es totalmente posible.
-  </p>
+  <p>Para alguien que ya pasa tiempo en las calles de NYC, capturar entre <strong>5 y 10 incidentes por día</strong> es totalmente posible.</p>
   <p><strong>$50–$100 dólares por día</strong></p>
 </details>
 
@@ -232,10 +232,7 @@ details.content-section summary {
   <h4>Factores atenuantes</h4>
   <ul>
     <li><strong>Camiones:</strong> plataforma elevadora, unidad de refrigeración, motor secundario</li>
-    <li>
-      <strong>Autobuses:</strong> sin subida/bajada de pasajeros ni carga de equipaje
-      (se debe grabar todo el lado derecho)
-    </li>
+    <li><strong>Autobuses:</strong> sin subida/bajada de pasajeros ni carga de equipaje (se debe grabar todo el lado derecho)</li>
     <li><strong>Vans / Pickups:</strong> sin placa comercial, unidad de refrigeración</li>
   </ul>
 </details>
@@ -275,6 +272,15 @@ details.content-section summary {
     <img src="https://via.placeholder.com/300x200?text=Humo+Visible" alt="">
     <img src="https://via.placeholder.com/300x200?text=Lado+Derecho+Autobús" alt="">
   </div>
+</details>
+
+<details class="content-section">
+  <summary>Aviso Legal</summary>
+  <p>Esta página es solo para fines informativos y no constituye asesoramiento legal.</p>
+  <p>Al enviar un video, confirmas que fue grabado legalmente, desde un lugar público, sin invadir propiedad privada y cumpliendo todas las leyes aplicables.</p>
+  <p>No eres empleado, contratista ni representante del operador del sitio. La participación es voluntaria.</p>
+  <p>El pago se ofrece como una recompensa de buena fe por material utilizable y no está garantizado.</p>
+  <p>El operador del sitio es el único responsable de presentar denuncias oficiales y no asume responsabilidad por problemas derivados de la grabación o el envío.</p>
 </details>
 
 </div>
