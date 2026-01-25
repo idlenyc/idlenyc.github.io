@@ -76,8 +76,8 @@ details.content-section summary {
 
 /* ===== Intro Box ===== */
 .intro-box {
-  background: #f9f9f9;
-  border-left: 5px solid #000;
+  background: #f0f8ff;
+  border-left: 5px solid #007700;
   border-radius: 10px;
   padding: 1.25rem 1.5rem;
   margin-bottom: 1.5rem;
@@ -96,7 +96,7 @@ details.content-section summary {
 
 /* ===== CTA Box ===== */
 .cta-box {
-  border: 2px solid #000;
+  border: 2px solid #28a745; /* subtle green for action */
   border-radius: 14px;
   padding: 1.25rem 1.4rem;
   margin: 1.5rem 0;
@@ -114,6 +114,17 @@ details.content-section summary {
 
 .cta-box strong {
   font-weight: 700;
+}
+
+/* ===== Emoji accents in headings ===== */
+.intro-box h2::before,
+.cta-box h3::before {
+  content: "📹 ";
+  margin-right: 0.25rem;
+}
+
+.cta-box h3::before {
+  content: "💰 ";
 }
 </style>
 
