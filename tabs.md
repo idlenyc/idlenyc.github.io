@@ -1,3 +1,10 @@
+---
+layout: page
+title: Guide
+---
+
+# Guide on producing idle videos
+
 <style>
 /* ===== Language Tabs ===== */
 .lang-tabs {
