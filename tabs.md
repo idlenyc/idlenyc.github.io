@@ -24,8 +24,6 @@ title: Guide
   cursor: pointer;
   text-align: center;
   flex: 1 1 100%;
-  min-width: 120px;
-  transition: background 0.2s;
 }
 
 .lang-btn.active {
@@ -39,11 +37,16 @@ title: Guide
   }
 }
 
-/* ===== Table of Contents ===== */
-.toc {
-  margin: 1rem 0;
+/* ===== Language Visibility ===== */
+.lang-content {
+  display: none;
 }
 
+.lang-content.active {
+  display: block;
+}
+
+/* ===== TOC ===== */
 .toc details {
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -57,18 +60,19 @@ title: Guide
   cursor: pointer;
 }
 
-/* ===== Collapsible ===== */
-details.content-collapsible {
+/* ===== Collapsible Sections ===== */
+details.content-section {
   border: 1px solid #ddd;
   border-radius: 6px;
   padding: 0.75rem 1rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   background: #fafafa;
 }
 
-details.content-collapsible summary {
-  font-weight: 600;
+details.content-section summary {
+  font-weight: 700;
   cursor: pointer;
+  font-size: 1.05rem;
 }
 
 /* ===== Images ===== */
@@ -94,65 +98,51 @@ details.content-collapsible summary {
 <!-- ================= ENGLISH ================= -->
 <div id="lang-en" class="lang-content active">
 
-<h2 id="top">Earn $10 for Recording Idling Vehicles</h2>
+<h2>Earn $10 for Recording Idling Vehicles</h2>
 
 <div class="toc">
   <strong>Table of Contents</strong>
-  <details>
-    <summary><a href="#why" class="toc-link">Why am I doing this?</a></summary>
-  </details>
-  <details>
-    <summary><a href="#reward" class="toc-link">Why is the reward $10?</a></summary>
-  </details>
-  <details>
-    <summary><a href="#earnings" class="toc-link">How much can I earn?</a></summary>
-  </details>
-  <details>
-    <summary><a href="#guidelines" class="toc-link">Video guidelines</a></summary>
-  </details>
-  <details>
-    <summary><a href="#steps" class="toc-link">Step-by-step</a></summary>
-  </details>
-  <details>
-    <summary><a href="#examples" class="toc-link">Examples</a></summary>
-  </details>
+  <details><summary><a href="#why-en" class="toc-link">Why am I doing this?</a></summary></details>
+  <details><summary><a href="#reward-en" class="toc-link">Why is the reward $10?</a></summary></details>
+  <details><summary><a href="#earnings-en" class="toc-link">How much can I earn?</a></summary></details>
+  <details><summary><a href="#guidelines-en" class="toc-link">Video guidelines</a></summary></details>
+  <details><summary><a href="#steps-en" class="toc-link">Step-by-step</a></summary></details>
+  <details><summary><a href="#examples-en" class="toc-link">Examples</a></summary></details>
 </div>
 
-<h3 id="why">Why am I doing this?</h3>
-<p>
-I’ve been recording these videos myself for several years and am making good money.
-My reporting process is streamlined and takes very little time.
-</p>
-<p>
-The limiting factor is capturing incidents — which I can crowdsource through you.
-</p>
+<details id="why-en" class="content-section">
+  <summary>Why am I doing this?</summary>
+  <p>I have been recording these videos myself for several years and am making good money.</p>
+  <p>My reporting process is streamlined and does not take much time.</p>
+  <p>The limiting factor is capturing incidents, which I can crowdsource through you.</p>
+  <ul>
+    <li>You make easy money</li>
+    <li>I make money</li>
+    <li>The city gets cleaner air</li>
+  </ul>
+</details>
 
-<ul>
-  <li>You make easy money</li>
-  <li>I make money</li>
-  <li>The city gets cleaner air</li>
-</ul>
+<details id="reward-en" class="content-section">
+  <summary>Why is the reward $10?</summary>
+  <ul>
+    <li>I take care of officially filing the complaint and paying taxes</li>
+    <li>Getting the official reward takes at least one year</li>
+    <li>You get paid immediately</li>
+    <li>Often the offender does not pay, so I get $0</li>
+    <li>I shield you from the complicated process and long wait</li>
+  </ul>
+</details>
 
-<h3 id="reward">Why is the reward $10?</h3>
-<ul>
-  <li>I handle filing the complaint and paying taxes</li>
-  <li>Official rewards take 1+ year — you get paid immediately</li>
-  <li>Many offenders never pay, meaning I get $0</li>
-  <li>I shield you from bureaucracy and risk</li>
-</ul>
+<details id="earnings-en" class="content-section">
+  <summary>How much can I earn?</summary>
+  <p>For someone already spending time on the streets of NYC, capturing 5–10 incidents per day is realistic.</p>
+  <p><strong>$50–$100 per day</strong></p>
+</details>
 
-<h3 id="earnings">How much can I earn?</h3>
-<p>
-For someone already on NYC streets, capturing <strong>5–10 incidents per day</strong> is realistic.
-</p>
-<p>
-That’s <strong>$50–$100 per day</strong>.
-</p>
+<details id="guidelines-en" class="content-section">
+  <summary>Video guidelines</summary>
 
-<h3 id="guidelines">Video guidelines</h3>
-
-<details class="content-collapsible">
-  <summary>Principles</summary>
+  <h4>Principles</h4>
   <ul>
     <li>Only commercial vehicles and buses</li>
     <li>No private vehicles, Ubers, taxis, city or police vehicles</li>
@@ -160,170 +150,154 @@ That’s <strong>$50–$100 per day</strong>.
     <li>Audible engine noise or visible exhaust required</li>
     <li>License plate and DOT number must be visible</li>
   </ul>
-</details>
 
-<details class="content-collapsible">
-  <summary>Mitigating factors</summary>
+  <h4>Mitigating factors</h4>
   <ul>
     <li><strong>Trucks:</strong> tail lift, cooling unit, secondary engine</li>
-    <li>
-      <strong>Buses:</strong> no passengers or luggage loading
-      (entire right side must be visible)
-    </li>
+    <li><strong>Buses:</strong> no passengers or luggage loading (entire right side visible)</li>
     <li><strong>Vans/Pickups:</strong> no commercial plate, cooling unit</li>
   </ul>
 </details>
 
-<h3 id="steps">Step-by-step</h3>
-<ol>
-  <li>
-    Download a timestamp + location camera:
-    <ul>
-      <li>
-        <a href="https://play.google.com/store/apps/details?id=com.jeyluta.timestampcamerafreeent&pli=1" target="_blank">
-          Android – Timestamp Camera
-        </a>
-      </li>
-      <li>
-        <a href="https://apps.apple.com/ph/app/timestamp-camera-enterprise/id1297201432" target="_blank">
-          iOS – Timestamp Camera Enterprise
-        </a>
-      </li>
-    </ul>
-  </li>
-  <li>Record the full video following guidelines</li>
-  <li>Rename the file to your <strong>Venmo username</strong></li>
-  <li>
-    Upload here:
-    <a href="https://we.tl/r-nGvpVZiFwo" target="_blank">WeTransfer</a>
-  </li>
-  <li>Approved videos earn <strong>$10</strong></li>
-</ol>
+<details id="steps-en" class="content-section">
+  <summary>Step-by-step</summary>
+  <ol>
+    <li>
+      Download a video app that adds timestamps and location:
+      <ul>
+        <li>
+          <a href="https://play.google.com/store/apps/details?id=com.jeyluta.timestampcamerafreeent&pli=1" target="_blank">
+            Android – Timestamp Camera
+          </a>
+        </li>
+        <li>
+          <a href="https://apps.apple.com/ph/app/timestamp-camera-enterprise/id1297201432" target="_blank">
+            iOS – Timestamp Camera Enterprise
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>Record the full video</li>
+    <li>Rename the file to your <strong>Venmo username</strong></li>
+    <li>
+      Upload here:
+      <a href="https://we.tl/r-nGvpVZiFwo" target="_blank">WeTransfer</a>
+    </li>
+    <li>If approved, you receive <strong>$10</strong></li>
+  </ol>
+</details>
 
-<h3 id="examples">Examples</h3>
-<div class="example-grid">
-  <img src="https://via.placeholder.com/300x200?text=License+Plate" alt="">
-  <img src="https://via.placeholder.com/300x200?text=Exhaust" alt="">
-  <img src="https://via.placeholder.com/300x200?text=Bus+Right+Side" alt="">
-</div>
+<details id="examples-en" class="content-section">
+  <summary>Examples</summary>
+  <div class="example-grid">
+    <img src="https://via.placeholder.com/300x200?text=License+Plate+Visible" alt="">
+    <img src="https://via.placeholder.com/300x200?text=Visible+Exhaust" alt="">
+    <img src="https://via.placeholder.com/300x200?text=Bus+Right+Side" alt="">
+  </div>
+</details>
 
 </div>
 
 <!-- ================= SPANISH ================= -->
 <div id="lang-es" class="lang-content">
 
-<h2 id="top-es">Gana $10 grabando vehículos en ralentí</h2>
+<h2>Gana $10 por grabar vehículos en ralentí</h2>
 
 <div class="toc">
   <strong>Tabla de Contenidos</strong>
-  <details>
-    <summary><a href="#why-es" class="toc-link">¿Por qué hago esto?</a></summary>
-  </details>
-  <details>
-    <summary><a href="#reward-es" class="toc-link">¿Por qué la recompensa es $10?</a></summary>
-  </details>
-  <details>
-    <summary><a href="#earnings-es" class="toc-link">¿Cuánto puedo ganar?</a></summary>
-  </details>
-  <details>
-    <summary><a href="#guidelines-es" class="toc-link">Guías de video</a></summary>
-  </details>
-  <details>
-    <summary><a href="#steps-es" class="toc-link">Paso a paso</a></summary>
-  </details>
-  <details>
-    <summary><a href="#examples-es" class="toc-link">Ejemplos</a></summary>
-  </details>
+  <details><summary><a href="#why-es" class="toc-link">¿Por qué hago esto?</a></summary></details>
+  <details><summary><a href="#reward-es" class="toc-link">¿Por qué la recompensa es $10?</a></summary></details>
+  <details><summary><a href="#earnings-es" class="toc-link">¿Cuánto puedo ganar?</a></summary></details>
+  <details><summary><a href="#guidelines-es" class="toc-link">Guías del video</a></summary></details>
+  <details><summary><a href="#steps-es" class="toc-link">Paso a paso</a></summary></details>
+  <details><summary><a href="#examples-es" class="toc-link">Ejemplos</a></summary></details>
 </div>
 
-<h3 id="why-es">¿Por qué hago esto?</h3>
-<p>
-He estado grabando estos videos yo mismo durante varios años y he estado ganando buen dinero.
-Mi proceso de reportes está optimizado y ahora toma muy poco tiempo.
-</p>
-<p>
-El factor limitante es capturar incidentes, lo que puedo hacer mediante crowdsourcing contigo.
-</p>
-
-<ul>
-  <li>Tú ganas dinero fácilmente</li>
-  <li>Yo gano dinero</li>
-  <li>La ciudad obtiene aire más limpio</li>
-</ul>
-
-<h3 id="reward-es">¿Por qué la recompensa es $10?</h3>
-<ul>
-  <li>Yo me encargo de presentar la queja y pagar impuestos</li>
-  <li>Las recompensas oficiales tardan más de un año — tú recibes dinero de inmediato</li>
-  <li>Muchos infractores nunca pagan, lo que significa que yo recibo $0</li>
-  <li>Te protejo de la burocracia y el riesgo</li>
-</ul>
-
-<h3 id="earnings-es">¿Cuánto puedo ganar?</h3>
-<p>
-Para alguien que ya pasa tiempo en las calles de NYC, capturar <strong>5–10 incidentes por día</strong> es realista.
-</p>
-<p>
-Eso significa <strong>$50–$100 diarios</strong>.
-</p>
-
-<h3 id="guidelines-es">Guías de video</h3>
-
-<details class="content-collapsible">
-  <summary>Principios</summary>
+<details id="why-es" class="content-section">
+  <summary>¿Por qué hago esto?</summary>
+  <p>He estado grabando estos videos yo mismo durante varios años y he generado buenos ingresos.</p>
+  <p>Mi proceso de reporte está optimizado y ahora toma muy poco tiempo.</p>
+  <p>El factor limitante es capturar los incidentes, y eso es algo que puedo externalizar contigo.</p>
   <ul>
-    <li>Solo vehículos comerciales y autobuses</li>
-    <li>No vehículos privados, Ubers, taxis, vehículos de la ciudad o policía</li>
+    <li>Tú ganas dinero fácilmente</li>
+    <li>Yo gano dinero</li>
+    <li>La ciudad obtiene aire más limpio</li>
+  </ul>
+</details>
+
+<details id="reward-es" class="content-section">
+  <summary>¿Por qué la recompensa es $10?</summary>
+  <ul>
+    <li>Yo me encargo de presentar la denuncia oficialmente y pagar los impuestos</li>
+    <li>Las recompensas oficiales tardan al menos un año, muchas veces más</li>
+    <li>Tú recibes el dinero de inmediato</li>
+    <li>En muchos casos el infractor nunca paga, y yo recibo $0</li>
+    <li>Te protejo del proceso complicado y de la larga espera</li>
+  </ul>
+</details>
+
+<details id="earnings-es" class="content-section">
+  <summary>¿Cuánto puedo ganar?</summary>
+  <p>Para alguien que ya pasa tiempo en las calles de NYC, capturar entre 5 y 10 incidentes por día es totalmente posible.</p>
+  <p><strong>$50–$100 dólares por día</strong></p>
+</details>
+
+<details id="guidelines-es" class="content-section">
+  <summary>Guías del video</summary>
+
+  <h4>Principios</h4>
+  <ul>
+    <li>Solo se pueden reportar vehículos comerciales y autobuses</li>
+    <li>No vehículos privados, Ubers, taxis, vehículos de la ciudad ni patrullas policiales</li>
     <li>El vehículo no debe moverse durante <strong>3:10 minutos</strong></li>
-    <li>Se requiere ruido de motor audible o humo visible</li>
-    <li>La matrícula y número DOT deben ser visibles</li>
+    <li>Debe escucharse el motor o verse claramente el humo del escape</li>
+    <li>La matrícula y el número DOT deben ser claramente visibles</li>
   </ul>
-</details>
 
-<details class="content-collapsible">
-  <summary>Factores atenuantes</summary>
+  <h4>Factores atenuantes</h4>
   <ul>
-    <li><strong>Camiones:</strong> uso de elevador de cola, unidad de refrigeración, motor secundario</li>
-    <li>
-      <strong>Autobuses:</strong> sin pasajeros subiendo/bajando, sin carga de equipaje
-      (todo el lado derecho debe ser visible)
-    </li>
-    <li><strong>Furgonetas / pickups:</strong> sin placa comercial, unidad de refrigeración</li>
+    <li><strong>Camiones:</strong> uso de plataforma elevadora, unidad de refrigeración o motor secundario</li>
+    <li><strong>Autobuses:</strong> sin subida/bajada de pasajeros ni carga de equipaje (se debe grabar todo el lado derecho)</li>
+    <li><strong>Vans / Pickups:</strong> sin placa comercial, unidad de refrigeración</li>
   </ul>
 </details>
 
-<h3 id="steps-es">Paso a paso</h3>
-<ol>
-  <li>
-    Descarga una cámara que agregue fecha, hora y ubicación:
-    <ul>
-      <li>
-        <a href="https://play.google.com/store/apps/details?id=com.jeyluta.timestampcamerafreeent&pli=1" target="_blank">
-          Android – Timestamp Camera
-        </a>
-      </li>
-      <li>
-        <a href="https://apps.apple.com/ph/app/timestamp-camera-enterprise/id1297201432" target="_blank">
-          iOS – Timestamp Camera Enterprise
-        </a>
-      </li>
-    </ul>
-  </li>
-  <li>Graba el video completo siguiendo las guías</li>
-  <li>Renombra el archivo con tu <strong>usuario de Venmo</strong></li>
-  <li>
-    Sube el video aquí:
-    <a href="https://we.tl/r-nGvpVZiFwo" target="_blank">WeTransfer</a>
-  </li>
-  <li>Videos aprobados ganan <strong>$10</strong></li>
-</ol>
+<details id="steps-es" class="content-section">
+  <summary>Paso a paso</summary>
+  <ol>
+    <li>
+      Descarga una aplicación de video que agregue fecha, hora y ubicación:
+      <ul>
+        <li>
+          <a href="https://play.google.com/store/apps/details?id=com.jeyluta.timestampcamerafreeent&pli=1" target="_blank">
+            Android – Timestamp Camera
+          </a>
+        </li>
+        <li>
+          <a href="https://apps.apple.com/ph/app/timestamp-camera-enterprise/id1297201432" target="_blank">
+            iOS – Timestamp Camera Enterprise
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>Graba el video completo cumpliendo las guías</li>
+    <li>Cambia el nombre del archivo a tu <strong>usuario de Venmo</strong></li>
+    <li>
+      Sube el video aquí:
+      <a href="https://we.tl/r-nGvpVZiFwo" target="_blank">WeTransfer</a>
+    </li>
+    <li>Si el video es aprobado, recibes <strong>$10</strong></li>
+  </ol>
+</details>
 
-<h3 id="examples-es">Ejemplos</h3>
-<div class="example-grid">
-  <img src="https://via.placeholder.com/300x200?text=Matrícula+Visible" alt="">
-  <img src="https://via.placeholder.com/300x200?text=Humo+Visible" alt="">
-  <img src="https://via.placeholder.com/300x200?text=Lado+Derecho+Autobús" alt="">
-</div>
+<details id="examples-es" class="content-section">
+  <summary>Ejemplos</summary>
+  <div class="example-grid">
+    <img src="https://via.placeholder.com/300x200?text=Matrícula+Visible" alt="">
+    <img src="https://via.placeholder.com/300x200?text=Humo+Visible" alt="">
+    <img src="https://via.placeholder.com/300x200?text=Lado+Derecho+Autobús" alt="">
+  </div>
+</details>
 
 </div>
 
@@ -331,33 +305,19 @@ Eso significa <strong>$50–$100 diarios</strong>.
 function switchLang(lang) {
   document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
   document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
-
   document.getElementById('lang-' + lang).classList.add('active');
   document.querySelector(`[onclick="switchLang('${lang}')"]`).classList.add('active');
-
-  localStorage.setItem('lang', lang);
 }
 
-// Restore language
-(function () {
-  const saved = localStorage.getItem('lang');
-  if (saved) switchLang(saved);
-})();
-
-// Auto-expand collapsible when TOC link clicked
 document.querySelectorAll('.toc-link').forEach(link => {
-  link.addEventListener('click', function(e) {
+  link.addEventListener('click', e => {
     e.preventDefault();
-    const targetId = this.getAttribute('href').substring(1);
-    const target = document.getElementById(targetId);
-    if (!target) return;
-
-    // Open the nearest parent collapsible if exists
-    let parentDetails = target.closest('details');
-    if (parentDetails) parentDetails.open = true;
-
-    // Scroll to the section smoothly
-    target.scrollIntoView({behavior: 'smooth'});
+    const id = link.getAttribute('href').substring(1);
+    const section = document.getElementById(id);
+    if (section) {
+      section.open = true;
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   });
 });
 </script>
