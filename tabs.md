@@ -73,7 +73,31 @@ details.content-section summary {
   border-radius: 6px;
   border: 1px solid #ddd;
 }
+
+.cta-box {
+  border: 2px solid #000;
+  border-radius: 14px;
+  padding: 1.25rem 1.4rem;
+  margin: 1.5rem 0;
+  background: #fff;
+}
+
+.cta-box h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.cta-box ul {
+  margin-left: 1.2rem;
+}
+
+.cta-box strong {
+  font-weight: 700;
+}
+  
 </style>
+
+
 
 <!-- LANGUAGE TABS -->
 <div class="lang-tabs">
@@ -171,6 +195,23 @@ details.content-section summary {
     <img src="https://via.placeholder.com/300x200?text=Bus+Right+Side" alt="">
   </div>
 </details>
+
+<div class="cta-box">
+  <h3>Ready to get started?</h3>
+  <p>
+    If you’re already spending time on the streets of NYC, recording idling vehicles
+    can be an easy way to earn extra cash.
+  </p>
+  <p>All you need is your phone and a few minutes per incident.</p>
+  <ul>
+    <li>Record a qualifying video</li>
+    <li>Rename it to your Venmo username</li>
+    <li>Upload it using the link above</li>
+    <li><strong>Get paid $10 if approved</strong></li>
+  </ul>
+  <p><strong>No sign-up. No paperwork. No waiting.</strong></p>
+</div>
+
 
 <details class="content-section">
   <summary>Legal Disclaimer</summary>
@@ -273,6 +314,23 @@ details.content-section summary {
     <img src="https://via.placeholder.com/300x200?text=Lado+Derecho+Autobús" alt="">
   </div>
 </details>
+
+<div class="cta-box">
+  <h3>¿Listo para empezar?</h3>
+  <p>
+    Si ya pasas tiempo en las calles de NYC, grabar vehículos en ralentí
+    puede ser una forma sencilla de ganar dinero extra.
+  </p>
+  <p>Solo necesitas tu teléfono y unos minutos por incidente.</p>
+  <ul>
+    <li>Graba un video válido</li>
+    <li>Cámbiale el nombre a tu usuario de Venmo</li>
+    <li>Súbelo usando el enlace de arriba</li>
+    <li><strong>Recibe $10 si es aprobado</strong></li>
+  </ul>
+  <p><strong>Sin registro. Sin papeleo. Sin esperas.</strong></p>
+</div>
+
 
 <details class="content-section">
   <summary>Aviso Legal</summary>
