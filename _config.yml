@@ -8,6 +8,6 @@ plugins:
 
 navigation:
   - title: Home
-    url: /
+    url: /guide
   - title: Tabs
     url: /tabs
