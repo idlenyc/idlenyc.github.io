@@ -1,0 +1,21 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Sidebar removed: stop the "minimal" float-right layout */
+section {
+  float: none;
+  width: auto;
+}
+
+/* Center the page */
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Optional: reduce the huge page padding used by Minimal */
+body {
+  padding: 24px;
+}
