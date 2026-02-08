@@ -274,11 +274,9 @@ details.content-section summary {
 
 <details class="content-section">
   <summary>Legal Disclaimer</summary>
-  <p>This page is for informational purposes only and does not constitute legal advice.</p>
   <p>By submitting a video, you confirm that you recorded it legally, from a public place, without trespassing, and in compliance with all applicable laws.</p>
   <p>You are not an employee, contractor, or agent of the website operator. Participation is voluntary.</p>
   <p>Payment is offered as a goodwill reward for usable footage and is not guaranteed.</p>
-  <p>The website operator is solely responsible for filing official complaints and assumes no liability for any issues arising from recording or submission.</p>
 </details>
 
 </div>
