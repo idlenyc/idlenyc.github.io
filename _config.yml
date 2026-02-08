@@ -3,6 +3,8 @@ description: A minimal Jekyll example
 
 remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 
+color-scheme: light
+
 plugins:
   - jekyll-remote-theme
 
