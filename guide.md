@@ -172,7 +172,7 @@ details.content-section summary {
 
 <!-- Sticky upload link -->
 <div class="sticky-upload">
-  <a href="https://we.tl/r-nGvpVZiFwo" target="_blank" class="upload-link">Upload Your Video Here</a>
+  <a href="https://we.tl/r-TOw5DLdMrX" target="_blank" class="upload-link">Upload Your Video Here</a>
 </div>
 
 <details class="content-section">
@@ -292,7 +292,7 @@ details.content-section summary {
 
 <!-- Sticky upload link -->
 <div class="sticky-upload">
-  <a href="https://we.tl/r-nGvpVZiFwo" target="_blank" class="upload-link">Sube tu video aquí</a>
+  <a href="https://we.tl/r-TOw5DLdMrX" target="_blank" class="upload-link">Sube tu video aquí</a>
 </div>
 
 <details class="content-section">
