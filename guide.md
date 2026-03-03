@@ -209,7 +209,7 @@ details.content-section summary {
 
   <h4>Principles</h4>
   <ul>
-    <li>Only commercial vehicles and buses</li>
+    <li>Only commercial vehicles and buses.</li>
     <li>No private vehicles, Ubers, taxis, city vehicles or police cars</li>
     <li>Vehicle must not move for <strong>3:10 minutes</strong></li>
     <li>Audible engine noise or visible exhaust plume required</li>
