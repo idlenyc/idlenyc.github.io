@@ -250,7 +250,7 @@ details.content-section summary {
 </details>
 
 <details class="content-section">
-  <summary>Examples</summary>
+  <summary>Video Examples</summary>
 
   <div class="video-container">
   <iframe src="https://player.vimeo.com/video/YOUR_VIDEO_ID"
@@ -260,6 +260,10 @@ details.content-section summary {
   </iframe>
   </div>
 
+</details>
+
+<details class="content-section">
+  <summary>Screenshot Examples</summary>
   
   <div class="example-grid">
     <img src="https://via.placeholder.com/300x200?text=License+Plate+Visible" alt="">
