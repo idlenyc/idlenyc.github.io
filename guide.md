@@ -251,6 +251,16 @@ details.content-section summary {
 
 <details class="content-section">
   <summary>Examples</summary>
+
+  <div class="video-container">
+  <iframe src="https://player.vimeo.com/video/YOUR_VIDEO_ID"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen>
+  </iframe>
+  </div>
+
+  
   <div class="example-grid">
     <img src="https://via.placeholder.com/300x200?text=License+Plate+Visible" alt="">
     <img src="https://via.placeholder.com/300x200?text=Visible+Exhaust" alt="">
