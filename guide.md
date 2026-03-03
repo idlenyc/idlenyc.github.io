@@ -253,7 +253,7 @@ details.content-section summary {
   <summary>Video Examples</summary>
 
   <div class="video-container">
-  <iframe src="https://player.vimeo.com/video/1164629163"
+  <iframe src="https://player.vimeo.com/video/1164629163?h=17c954085c"
           frameborder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           allowfullscreen>
