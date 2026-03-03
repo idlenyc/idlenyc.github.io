@@ -253,7 +253,7 @@ details.content-section summary {
   <summary>Video Examples</summary>
 
   <div class="video-container">
-  <iframe src="https://player.vimeo.com/video/YOUR_VIDEO_ID"
+  <iframe src="https://player.vimeo.com/video/1164629163"
           frameborder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           allowfullscreen>
@@ -266,9 +266,8 @@ details.content-section summary {
   <summary>Screenshot Examples</summary>
   
   <div class="example-grid">
-    <img src="https://via.placeholder.com/300x200?text=License+Plate+Visible" alt="">
-    <img src="https://via.placeholder.com/300x200?text=Visible+Exhaust" alt="">
-    <img src="https://via.placeholder.com/300x200?text=Bus+Right+Side" alt="">
+    <img src="{{ '/assets/images/non_commercial_truck.jpg' | relative_url }}" alt="Alt text">
+    <img src="{{ '/assets/images/refrigerated.jpg' | relative_url }}" alt="Alt text">
   </div>
 </details>
 
