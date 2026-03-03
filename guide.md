@@ -266,8 +266,8 @@ details.content-section summary {
   <summary>Screenshot Examples</summary>
   
   <div class="example-grid">
-    <img src="{{ '/assets/images/non_commercial_truck.jpg' | relative_url }}" alt="Alt text">
-    <img src="{{ '/assets/images/refrigerated.jpg' | relative_url }}" alt="Alt text">
+    <img src="{{ '/assets/images/refrigerated_2.JPG' | relative_url }}" alt="Alt text">
+    <img src="{{ '/assets/images/refrigerated.JPG' | relative_url }}" alt="Alt text">
   </div>
 </details>
 
