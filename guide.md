@@ -253,7 +253,11 @@ details.content-section summary {
   <summary>Video Examples</summary>
 
   <div class="video-container">
-<iframe src="https://player.vimeo.com/video/1174602987?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="NYC Idle: Exhaust Plume"></iframe>
+  <iframe src="https://player.vimeo.com/video/1174602987?h=36b1a811a4"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen>
+  </iframe>
   </div>
 
 </details>
