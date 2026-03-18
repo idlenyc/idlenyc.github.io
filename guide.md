@@ -251,15 +251,23 @@ details.content-section summary {
 
 <details class="content-section">
   <summary>Video Examples</summary>
-
+  Example: Exhaust Plume
   <div class="video-container">
-  <iframe src="https://player.vimeo.com/video/1164629163?h=17c954085c"
+  <iframe src="https://player.vimeo.com/video/1174602987?h=36b1a811a4"
           frameborder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           allowfullscreen>
   </iframe>
   </div>
-
+  
+  Example: Bus (no passenger or luggage loading)
+  <div class="video-container">
+  <iframe src="https://player.vimeo.com/video/1174602611?h=cbcc101892"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen>
+  </iframe>
+  </div>
 </details>
 
 <details class="content-section">
