@@ -253,11 +253,7 @@ details.content-section summary {
   <summary>Video Examples</summary>
 
   <div class="video-container">
-  <iframe src="https://vimeo.com/1174602987?fl=pl&fe=sh"
-          frameborder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowfullscreen>
-  </iframe>
+<iframe src="https://player.vimeo.com/video/1174602987?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="NYC Idle: Exhaust Plume"></iframe>
   </div>
 
 </details>
@@ -266,6 +262,7 @@ details.content-section summary {
   <summary>Screenshot Examples</summary>
   
   <div class="example-grid">
+    Not valid: cooling component
     <img src="{{ '/assets/images/refrigerated_2.JPG' | relative_url }}" alt="Alt text">
     <img src="{{ '/assets/images/refrigerated.JPG' | relative_url }}" alt="Alt text">
   </div>
