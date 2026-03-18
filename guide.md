@@ -400,11 +400,41 @@ details.content-section summary {
 </details>
 
 <details class="content-section">
-  <summary>Ejemplos</summary>
+  <summary>Ejemplos de vídeos</summary>
+  Example: Exhaust Plume
+  <div class="video-container">
+  <iframe src="https://player.vimeo.com/video/1174602987?h=36b1a811a4"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen>
+  </iframe>
+  </div>
+  
+  Example: Bus (no passenger or luggage loading)
+  <div class="video-container">
+  <iframe src="https://player.vimeo.com/video/1174602611?h=cbcc101892"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen>
+  </iframe>
+  </div>
+</details>
+
+<details class="content-section">
+  <summary>Ejemplos de capturas de pantalla</summary>
+  
   <div class="example-grid">
-    <img src="https://via.placeholder.com/300x200?text=Matrícula+Visible" alt="">
-    <img src="https://via.placeholder.com/300x200?text=Humo+Visible" alt="">
-    <img src="https://via.placeholder.com/300x200?text=Lado+Derecho+Autobús" alt="">
+    Not valid: cooling component
+    <img src="{{ '/assets/images/refrigerated_2.JPG' | relative_url }}" alt="refrigerated_2">
+    <img src="{{ '/assets/images/refrigerated.JPG' | relative_url }}" alt="refrigerated_2">
+    Not valid: active loading
+    <img src="{{ '/assets/images/active_loading.JPG' | relative_url }}" alt="active_loading">
+    Not valid: Non-commercial city bus
+    <img src="{{ '/assets/images/city_bus.JPG' | relative_url }}" alt="city_bus">
+    Not valid: Non-commercial truck
+    <img src="{{ '/assets/images/non_commercial_truck.JPG' | relative_url }}" alt="non_commercial_truck">
+    Valid: Example of exhaust plume
+    <img src="{{ '/assets/images/exhaust_plume.png' | relative_url }}" alt="exhaust_plume">
   </div>
 </details>
 
