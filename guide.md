@@ -267,8 +267,10 @@ details.content-section summary {
   
   <div class="example-grid">
     Not valid: cooling component
-    <img src="{{ '/assets/images/refrigerated_2.JPG' | relative_url }}" alt="Alt text">
-    <img src="{{ '/assets/images/refrigerated.JPG' | relative_url }}" alt="Alt text">
+    <img src="{{ '/assets/images/refrigerated_2.JPG' | relative_url }}" alt="refrigerated_2">
+    <img src="{{ '/assets/images/refrigerated.JPG' | relative_url }}" alt="refrigerated_2">
+    Not valid: active loading
+    <img src="{{ '/assets/images/active_loading.JPG' | relative_url }}" alt="active_loading">
   </div>
 </details>
 
